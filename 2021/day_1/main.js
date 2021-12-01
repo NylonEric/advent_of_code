@@ -22,9 +22,9 @@ const countIncreases = (fileName) => {
     } else {
       if (Number(previousLine) < Number(line)) {
         count++;
-        previousLine = line;
-        console.log('here is previous, current and count: ', previousLine, line, count);
+        // console.log('here is previous, current and count: ', previousLine, line, count);
       }
+      previousLine = line;
     }
   })
   .on('close', function() {
